@@ -1,0 +1,11 @@
+apiVersion: keycloak.org/v1alpha1
+kind: Keycloak
+metadata:
+  namespace: janus
+  name: example-sso
+  labels:
+    app: sso
+spec:
+  instances: 1
+  externalAccess:
+    enabled: True
